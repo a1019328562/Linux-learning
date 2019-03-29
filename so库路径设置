@@ -1,0 +1,10 @@
+为避免自己开发的so库不在系统路径，有几种方法：
+1.修改环境变量
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:{自定义库路径}
+2.设置链接器参数
+gcc main.c -Wl,-rpath=./lib
+[root@nlocalhostl]# readelf -a a.out |grep RPATH
+0x000000000000000f (RPATH) Library rpath: [./lib]
+
+这样程序运行时就会在当前目录下的lib下查找so文件。
+不过运行时需要写个shell脚本，先cd到程序主目录，在启动。
