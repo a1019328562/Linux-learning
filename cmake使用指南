@@ -1,0 +1,2 @@
+首先编写 CMakeLists.txt 文件，并保存在与cpp源文件同个目录下;
+之后，在当前目录执行 cmake . ，得到 Makefile 后再使用 make 命令编译.
