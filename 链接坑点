@@ -1,0 +1,2 @@
+c++ -O3 -DLINUX -shared -D_GLIBCXX_USE_CXX11_ABI=0 -Wall -I/home/chao/Wangzuo/demo_py11/pybind11/include -I/home/chao/Wangzuo/api_cpp/include  -L/home/chao/Wangzuo/api_cpp -lDolphinDBAPI -luuid -std=c++11 -fPIC `python3 -m pybind11 --includes` wztest.cpp -o wztest`python3-config --extension-suffix` -L/home/chao/Wangzuo/api_cpp -lDolphinDBAPI 
+链接时基础库放在后面
