@@ -1,1 +1,8 @@
 make VERBOSE=1
+
+/usr/bin/c++ -fPIC   -shared  -o api_cpp.cpython-37m-x86_64-linux-gnu.so CMakeFiles/api_cpp.dir/main.cpp.o  -L/home/chao/Wangzuo/python_cpp_api/api-cplusplus/bin/linux_x64 -Wl,-rpath,. -flto -lDolphinDBAPI -ldl -luuid -lcrypto -lpthread -lssl
+
+
+/usr/bin/cmake -E cmake_link_script CMakeFiles/api_cpp.dir/link.txt --verbose=1
+
+/usr/bin/c++ -fPIC   -shared  -o api_cpp.cpython-37m-x86_64-linux-gnu.so CMakeFiles/api_cpp.dir/main.cpp.o  -L/home/chao/Wangzuo/python_cpp_api/api-cplusplus/bin/linux_x64 -Wl,-rpath,. -flto -lDolphinDBAPI -ldl -luuid -lssl -lcrypto -lpthread -lssl
