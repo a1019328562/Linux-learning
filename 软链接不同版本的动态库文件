@@ -1,0 +1,2 @@
+ln -s libssl.so.1.0 libssl.so
+ln -s libssl.so.1.0 libssl.so
